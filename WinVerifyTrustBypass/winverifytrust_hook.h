@@ -17,7 +17,7 @@ namespace Hook
 	using WinVerifyTrustFn = LONG(__stdcall*)(HWND, GUID*, LPVOID);
 	WinVerifyTrustFn oWinVerifyTrustFn;
 	LONG hkWinVerifyTrust(HWND hwnd, GUID* pgActionID, LPVOID pWVTData) {
-		oWinVerifyTrustFn(hwnd, pgActionID, pWVTData); //Just for Testing what Function is Successfully Initializated!!!
+		oWinVerifyTrustFn(hwnd, pgActionID, pWVTData); //Just for Testing if Function is Successfully Initializated!!! If Doesn't Worked, you need to bypass somehow...
 		cout << "[WinVerifyBypass] Successfully Called WinVerifyTrust Function" << endl;
 		return 0;
 	}
@@ -33,4 +33,5 @@ namespace Hook
 			cout << "[WinVerifyTrustBypass] Successfully Hooked WinVerifyTrust Function." << endl;
 		}
 	}
+
 }
