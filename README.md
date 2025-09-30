@@ -6,7 +6,7 @@ Enjoy to use this!!!
 [Join to My Discord Server](https://discord.gg/3UFJqWsEsk)
 
 > [!WARNING]
-> It's not Working into EA Games due to this games have only OpenSSL static library!!! You Need to Detect these addresses and hooked via Minhook!!! Thanks for Reading This!!!
+> My Project will be not Worked at EA Games due to this games have only OpenSSL static library!!! You Need to Detect these addresses and hooked via Minhook!!! Thanks for Reading This!!!
 
 ## Donations
 
