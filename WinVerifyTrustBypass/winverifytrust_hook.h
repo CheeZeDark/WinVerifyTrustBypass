@@ -29,9 +29,10 @@ namespace Hook
 		else {
 			throw std::runtime_error("Failed to Init Minhook!!!");
 		}
-		if (MH_CreateHookApi(L"wintrust", "WinVerifyTrust", hkWinVerifyTrust, (void**)oWinVerifyTrustFn) == MH_OK) {
+		if (MH_CreateHookApi(L"wintrust", "WinVerifyTrust", hkWinVerifyTrust, reinterpret_cast<void**>(oWinVerifyTrustFn)) == MH_OK) {
 			cout << "[WinVerifyTrustBypass] Successfully Hooked WinVerifyTrust Function." << endl;
 		}
 	}
 
 }
+
